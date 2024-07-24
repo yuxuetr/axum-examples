@@ -1,0 +1,14 @@
+[package]
+name = "axum-auth"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.86"
+axum = "0.7.5"
+chrono = { version = "0.4.38", features = ["serde"] }
+jwt-simple = "0.12.9"
+serde = { version = "1.0.204", features = ["derive"] }
+tokio = { version = "1.39.1", features = ["net", "rt", "rt-multi-thread"] }
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }

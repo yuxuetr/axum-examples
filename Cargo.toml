@@ -1,0 +1,3 @@
+[workspace]
+members = ["axum-auth"]
+resolver = "2"

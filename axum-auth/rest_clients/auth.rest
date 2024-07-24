@@ -1,0 +1,14 @@
+### Get Token
+# @name signin
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+	"username": "admin"
+}
+
+@token = {{signin.response.body.token}}
+
+###
+GET http://localhost:3000/protected
+Authorization: Bearer {{token}}
